@@ -1,8 +1,22 @@
 import { useState } from 'react';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import Icon from '@/components/ui/icon';
+import 'leaflet/dist/leaflet.css';
+import L from 'leaflet';
+
+const iconUrl = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='41' viewBox='0 0 25 41'%3E%3Cpath fill='%23D2691E' d='M12.5 0C5.6 0 0 5.6 0 12.5c0 9.4 12.5 28.5 12.5 28.5S25 21.9 25 12.5C25 5.6 19.4 0 12.5 0z'/%3E%3Ccircle fill='white' cx='12.5' cy='12.5' r='5'/%3E%3C/svg%3E";
+
+const defaultIcon = L.icon({
+  iconUrl: iconUrl,
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+  popupAnchor: [1, -34],
+});
+
+L.Marker.prototype.options.icon = defaultIcon;
 
 interface Place {
   id: number;
@@ -27,7 +41,7 @@ const places: Place[] = [
     name: 'Успенский собор',
     category: 'Храмы',
     description: 'Величественный белокаменный собор, объект Всемирного наследия ЮНЕСКО',
-    image: 'https://cdn.poehali.dev/projects/00feff43-c02a-4976-bec1-86e4c56f84c4/files/6cc38f7c-9834-40e7-8020-63fd2ad14978.jpg',
+    image: 'https://cdn.poehali.dev/projects/00feff43-c02a-4976-bec1-86e4c56f84c4/files/751ff27a-6831-4d68-9f03-5824b0b332a2.jpg',
     coordinates: { lat: 56.1288, lng: 40.4076 }
   },
   {
@@ -35,7 +49,7 @@ const places: Place[] = [
     name: 'Парк Пушкина',
     category: 'Парки',
     description: 'Уютный парк в центре города с живописными аллеями и зонами отдыха',
-    image: 'https://cdn.poehali.dev/projects/00feff43-c02a-4976-bec1-86e4c56f84c4/files/f0398a89-621b-46b3-9cd8-26ca50628c2f.jpg',
+    image: 'https://cdn.poehali.dev/projects/00feff43-c02a-4976-bec1-86e4c56f84c4/files/9166038a-a9b5-4bc7-962f-680e4c4d7697.jpg',
     coordinates: { lat: 56.1265, lng: 40.4012 }
   },
   {
@@ -43,7 +57,7 @@ const places: Place[] = [
     name: 'Дмитриевский собор',
     category: 'Храмы',
     description: 'Шедевр белокаменной резьбы XII века с уникальными барельефами',
-    image: 'https://cdn.poehali.dev/projects/00feff43-c02a-4976-bec1-86e4c56f84c4/files/6cc38f7c-9834-40e7-8020-63fd2ad14978.jpg',
+    image: 'https://cdn.poehali.dev/projects/00feff43-c02a-4976-bec1-86e4c56f84c4/files/751ff27a-6831-4d68-9f03-5824b0b332a2.jpg',
     coordinates: { lat: 56.1283, lng: 40.4089 }
   },
   {
@@ -51,7 +65,7 @@ const places: Place[] = [
     name: 'Кафе "Старый город"',
     category: 'Рестораны',
     description: 'Атмосферное кафе с традиционной русской кухней и панорамным видом',
-    image: 'https://cdn.poehali.dev/projects/00feff43-c02a-4976-bec1-86e4c56f84c4/files/47620ac2-2972-4e80-910d-8be59ac04422.jpg',
+    image: 'https://cdn.poehali.dev/projects/00feff43-c02a-4976-bec1-86e4c56f84c4/files/9166038a-a9b5-4bc7-962f-680e4c4d7697.jpg',
     coordinates: { lat: 56.1275, lng: 40.4050 }
   },
   {
@@ -59,7 +73,7 @@ const places: Place[] = [
     name: 'Патриарший сад',
     category: 'Парки',
     description: 'Исторический сад с древними яблонями и смотровой площадкой',
-    image: 'https://cdn.poehali.dev/projects/00feff43-c02a-4976-bec1-86e4c56f84c4/files/f0398a89-621b-46b3-9cd8-26ca50628c2f.jpg',
+    image: 'https://cdn.poehali.dev/projects/00feff43-c02a-4976-bec1-86e4c56f84c4/files/9166038a-a9b5-4bc7-962f-680e4c4d7697.jpg',
     coordinates: { lat: 56.1290, lng: 40.4065 }
   }
 ];
@@ -79,7 +93,7 @@ const Index = () => {
       <div 
         className="relative h-[70vh] bg-cover bg-center flex items-center justify-center"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://cdn.poehali.dev/projects/00feff43-c02a-4976-bec1-86e4c56f84c4/files/6cc38f7c-9834-40e7-8020-63fd2ad14978.jpg')`
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://cdn.poehali.dev/projects/00feff43-c02a-4976-bec1-86e4c56f84c4/files/446e506f-28f0-4e71-b7fb-6b5db93bac34.jpg')`
         }}
       >
         <div className="text-center text-white z-10 px-4 animate-fade-in">
