@@ -18,7 +18,7 @@ const places: Place[] = [
     name: 'Золотые ворота',
     description: 'Памятник древнерусской архитектуры XII века, символ Владимира',
     category: 'Архитектура',
-    image: 'https://cdn.poehali.dev/projects/00feff43-c02a-4976-bec1-86e4c56f84c4/files/efd01499-7919-4760-b093-3444d79c3900.jpg',
+    image: 'https://cdn.poehali.dev/projects/00feff43-c02a-4976-bec1-86e4c56f84c4/files/736e39c4-d176-43f3-a4d9-c906295f0e67.jpg',
     coordinates: { lat: 56.1292, lng: 40.3956 }
   },
   {
@@ -26,7 +26,7 @@ const places: Place[] = [
     name: 'Успенский собор',
     description: 'Белокаменный храм с золотыми куполами, объект всемирного наследия ЮНЕСКО',
     category: 'Храмы',
-    image: 'https://cdn.poehali.dev/projects/00feff43-c02a-4976-bec1-86e4c56f84c4/files/f7c79357-7931-4fef-854a-d0c81b28e37c.jpg',
+    image: 'https://cdn.poehali.dev/projects/00feff43-c02a-4976-bec1-86e4c56f84c4/files/ecb95610-74ad-4e24-9df3-5024f9559c91.jpg',
     coordinates: { lat: 56.1294, lng: 40.4078 }
   },
   {
@@ -34,7 +34,7 @@ const places: Place[] = [
     name: 'Дмитриевский собор',
     description: 'Шедевр владимиро-суздальского зодчества с уникальной каменной резьбой',
     category: 'Храмы',
-    image: 'https://cdn.poehali.dev/projects/00feff43-c02a-4976-bec1-86e4c56f84c4/files/3aaaca5b-a2f5-4920-b12c-6eafcec4ee44.jpg',
+    image: 'https://cdn.poehali.dev/projects/00feff43-c02a-4976-bec1-86e4c56f84c4/files/ecb95610-74ad-4e24-9df3-5024f9559c91.jpg',
     coordinates: { lat: 56.1289, lng: 40.4089 }
   },
   {
@@ -42,7 +42,7 @@ const places: Place[] = [
     name: 'Парк Пушкина',
     description: 'Любимое место отдыха горожан с прудом и детскими площадками',
     category: 'Парки',
-    image: 'https://cdn.poehali.dev/projects/00feff43-c02a-4976-bec1-86e4c56f84c4/files/efd01499-7919-4760-b093-3444d79c3900.jpg',
+    image: 'https://cdn.poehali.dev/projects/00feff43-c02a-4976-bec1-86e4c56f84c4/files/f061b39a-889e-4f22-9c40-3dca7742327f.jpg',
     coordinates: { lat: 56.1356, lng: 40.4003 }
   },
   {
@@ -50,7 +50,7 @@ const places: Place[] = [
     name: 'Смотровая площадка',
     description: 'Панорамный вид на Клязьму и заречные просторы',
     category: 'Панорамы',
-    image: 'https://cdn.poehali.dev/projects/00feff43-c02a-4976-bec1-86e4c56f84c4/files/f7c79357-7931-4fef-854a-d0c81b28e37c.jpg',
+    image: 'https://cdn.poehali.dev/projects/00feff43-c02a-4976-bec1-86e4c56f84c4/files/f061b39a-889e-4f22-9c40-3dca7742327f.jpg',
     coordinates: { lat: 56.1279, lng: 40.4112 }
   },
   {
@@ -58,7 +58,7 @@ const places: Place[] = [
     name: 'Патриарший сад',
     description: 'Исторический парк с фруктовыми деревьями и монастырскими стенами',
     category: 'Парки',
-    image: 'https://cdn.poehali.dev/projects/00feff43-c02a-4976-bec1-86e4c56f84c4/files/3aaaca5b-a2f5-4920-b12c-6eafcec4ee44.jpg',
+    image: 'https://cdn.poehali.dev/projects/00feff43-c02a-4976-bec1-86e4c56f84c4/files/736e39c4-d176-43f3-a4d9-c906295f0e67.jpg',
     coordinates: { lat: 56.1267, lng: 40.4056 }
   }
 ];
